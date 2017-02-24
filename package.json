@@ -1,0 +1,39 @@
+{
+  "name": "custom-marked",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandeurenglenn/custom-marked.git"
+  },
+  "keywords": [
+    "marked"
+  ],
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vandeurenglenn/custom-marked/issues"
+  },
+  "homepage": "https://github.com/vandeurenglenn/custom-marked#readme",
+  "devDependencies": {
+    "marked": "^0.3.6"
+  },
+  "babel": {
+    "babelrc": false,
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "plugins": [
+      "external-helpers"
+    ]
+  }
+}

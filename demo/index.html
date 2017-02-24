@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>custom-marked</title>
+    <meta name="description" content="">
+
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Chrome / Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="black">
+    <link rel="icon" href="icon.png">
+
+    <!-- Safari / iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+    <!-- Load Web Components when not supported-->
+    <script>
+      var webComponentsSupported = ('registerElement' in document
+          && 'import' in document.createElement('link')
+          && 'content' in document.createElement('template'));
+
+      if (!webComponentsSupported) {
+        var script = document.createElement('script');
+        script.src = 'bower_components/webcomponentsjs/webcomponents-lite.js';
+        document.head.appendChild(script);
+      }
+    </script>
+    <link rel="import" href="/bower_components/backed/backed.html">
+
+    <link rel="import" href="/custom-marked.html">
+    <style media="screen">
+      html, body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <custom-marked src="<tag></tag>"></custom-marked>
+  </body>
+</html>

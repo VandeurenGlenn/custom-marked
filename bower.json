@@ -1,0 +1,25 @@
+{
+  "name": "custom-marked",
+  "description": "",
+  "main": "custom-marked.html",
+  "authors": [
+    "Glenn Vandeuren <vandeurenglenn@gmail.com>"
+  ],
+  "license": "CC-BY-NC-ND-4.0",
+  "keywords": [
+    "marked"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "marked": "^0.3.6",
+    "backed": "*",
+    "prism": "^1.6.0"
+  }
+}

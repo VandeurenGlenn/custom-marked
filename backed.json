@@ -1,0 +1,28 @@
+{
+  "src": "src/custom-marked.js",
+  "dest": "dist/custom-marked.js",
+  "format": "iife",
+  "moduleName": "CustomMarked",
+  "babel": {
+    "babelrc": false,
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "plugins": [
+      "external-helpers"
+    ]
+  },
+  "server": {
+    "entry": "dist/",
+    "path": "custom-marked.html",
+    "elementLocation": "custom-marked.html"
+  },
+  "watch": [
+    "src/**/*.js"
+  ]
+}
